@@ -39,10 +39,6 @@ describe('The webpage', () => {
       // Does home link exist?
       const homeLink = menuItems.find(el => /home/i.test(el.textContent));
       assert(homeLink, 'Our menu needs at least one link that reads "Home".');
-
-      // Does about link exist?
-      const aboutLink = menuItems.find(el => /about/i.test(el.textContent));
-      assert(aboutLink, 'Our menu needs at least one link that reads "About".');
     });
   });
 
